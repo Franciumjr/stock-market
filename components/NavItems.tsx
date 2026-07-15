@@ -21,9 +21,12 @@ const NavItems = () => {
     return (
         <ul className='flex flex-col sm:flex-row sm:gap-10 p-2 gap-3 justify-center font-medium'>
             {navitem.map((item) => (
-                <Link href = {item.href} key = {item.id} className={`hover:text-violet-500 transition-colors ${isActive(item.href) ? 'text-white' : 'text-zinc-500'}`}>
+                <li>
+                    <Link href = {item.href} key = {item.id} className={`hover:text-violet-500 transition-colors ${isActive(item.href) ? 'text-white' : 'text-zinc-500'}`}>
                     {item.label}
-                </Link>
+                    </Link>
+                </li>
+                
             ))}
         </ul>
     )
