@@ -3,8 +3,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>page
-      <Button>Click Me</Button>
+    <div className='flex min-h-screen home-wrapper'>
     </div>
   )
 }
