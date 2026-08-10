@@ -8,10 +8,10 @@ const layout = ({
 }>) => {
   return (
     <main className='min-h-screen'>
-        <div className='container py-10'>
-            <Header></Header>
-            {children}
-        </div>
+      <div className='container py-10'>
+        <Header />
+        {children}
+      </div>
     </main>
 
   )
