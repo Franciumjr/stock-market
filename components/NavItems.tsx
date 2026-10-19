@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation'
 import React from 'react'
 import Link from 'next/link'
-import {navitem} from '@/lib/constants'
+import {NAV_ITEMS} from '@/lib/constants'
 
 
 const NavItems = () => {
@@ -19,9 +19,13 @@ const NavItems = () => {
     
 
     return (
-        <ul className='flex flex-col sm:flex-row sm:gap-10 p-2 gap-3 justify-center font-medium'>
-            {navitem.map((item) => (
-                <Link href = {item.href} key = {item.id} className={`hover:text-violet-500 transition-colors ${isActive(item.href) ? 'text-white' : 'text-zinc-500'}`}>
+        <ul className='flex flex-col sm:flex-row sm:gap-8 p-2 gap-3 justify-center font-medium'>
+            {NAV_ITEMS.map((item) => (
+                <Link 
+                    href={item.href} 
+                    key={item.href} 
+                    className={`hover:text-yellow-400 transition-colors ${isActive(item.href) ? 'text-yellow-400 font-semibold' : 'text-gray-400'}`}
+                >
                     {item.label}
                 </Link>
             ))}

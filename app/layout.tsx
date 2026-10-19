@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "StockMaster",
+  title: "Flindertrade",
   description: "A broker app that tracks real time stock markets, favourite to get personalised alerts",
 };
 
